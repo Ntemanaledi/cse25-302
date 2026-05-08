@@ -1,61 +1,111 @@
-<!DOCTYPE html> 
 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Collection | Naledi Motor Center</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<head> 
+    <!-- Navigation (Consistent with Home/About) -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm main-nav">
+        <div class="container">
+            <div class="custom-nav-container w-100">
+                <div class="nav-group">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About us</a>
+                    <a class="nav-link" href="services.html">Services</a>
+                </div>
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Naledi Logo">
+                </div>
+                <div class="nav-group">
+                    <a class="nav-link active" href="shop.html">Shop</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <meta charset="UTF-8"> 
+    <main class="container my-5 py-5">
+        <div class="row g-5">
+            <!-- Left: Vehicle Image -->
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1000" class="img-fluid rounded shadow" alt="BMW Vintage">
+                <div class="mt-4 d-flex gap-2">
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=400" class="img-fluid rounded border w-25" alt="BMW detail">
+                    <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&q=80&w=400" class="img-fluid rounded border w-25" alt="BMW interior">
+                </div>
+            </div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <!-- Right: Vehicle Details -->
+            <div class="col-md-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="shop.html" class="text-decoration-none">Shop</a></li>
+                        <li class="breadcrumb-item active">BMW</li>
+                    </ol>
+                </nav>
+                
+                <h1 class="fw-bold display-4 mb-3">BMW Classic Series</h1>
+                <p class="badge bg-secondary mb-3">In Stock</p>
+                <h2 class="text-primary fw-bold mb-4">Request Price</h2>
+                
+                <p class="text-secondary mb-4">
+                    Experience the "Ultimate Driving Machine." Our curated BMW collection features classic engineering and timeless design. Each model is hand-picked for its performance history and aesthetic preservation.
+                </p>
 
-    <title>BMW</title> 
+                <div class="bg-light p-4 rounded mb-4">
+                    <h5 class="fw-bold mb-3">Specifications</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><strong>Category:</strong> Vintage / Pre-owned</li>
+                        <li class="mb-2"><strong>Engine:</strong> Inline 6-Cylinder Performance</li>
+                        <li class="mb-2"><strong>Transmission:</strong> Manual / Automatic Options</li>
+                        <li class="mb-2"><strong>Status:</strong> Certified Inspected</li>
+                    </ul>
+                </div>
 
-</head> 
+                <div class="d-grid gap-2">
+                    <a href="contact.html" class="btn btn-dark btn-lg py-3">Inquire About This Car</a>
+                    <a href="shop.html" class="btn btn-outline-secondary">Back to Collection</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-<body> 
+    <!-- Professional Footer (With Hours) -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 border-bottom border-secondary pb-2">Naledi Motor Center</h5>
+                    <p class="small text-white-50">Bringing the amazing past to the present since 2015. Quality cars at affordable prices.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 border-bottom border-secondary pb-2">Working Hours</h5>
+                    <ul class="list-unstyled small text-white-50">
+                        <li class="mb-2"><strong>Week days:</strong> 08:00am – 6:00pm</li>
+                        <li class="mb-2"><strong>Weekends:</strong> 08:30am – 1:00pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3 border-bottom border-secondary pb-2">Find Us</h5>
+                    <p class="small mb-1 text-white-50">29057 Motloutse St, Gaborone</p>
+                    <p class="small mb-1 text-white-50">+267 74588888</p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 border-secondary">
+            <div class="text-center small text-white-50">
+                &copy; 2026 Naledi Ntema. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
 
-    <header> 
-      
-        <nav>  
-
-            <a href="shop.html">Shop</a> 
-
-        </nav> 
-    <h1>BMW</h1> 
-    </header> 
-
- 
-
-    <main> 
-   
-       <img src="https://placebmw5series(e12).com/200/300" alt="BMW 5 Series(E12)(1972-1981)">
-
-       <img src="https://placebmwe30m3.com/200/300" alt="BMW E30 M3 (1986-1991)">
-
-       <img src="https://placebmw8series(e31).com/200/300" alt="BMW 8 Series(E31)(1989-1999)">
-
-       <img src="https://placebmw3series(e30).com/200/300" alt="BMW 3 Series E30(1982-1994)">
-
-       <img src="https://placebmwe9coupé.com/200/300" alt="BMW E9 Coupé(1968-1975)">
-      
-       <img src="https://placebmw5series(e34).com/200/300" alt="BMW 5 Series E34 (1988-1995)">
-       
-       <img src="https://placebmw5series(e28).com/200/300" alt="BMW 5 Series E28 (1981-1988)">
-
-       <img src="https://placebmw(e30)325is.com/200/300" alt="BMW E30 325is(1987-1991)">
-         
-         
-
-    </main> 
-
- 
-
-    <footer> 
-
-        <p>&copy; 2026 Naledi Motor Center</p> 
-
-    </footer> 
-
-</body> 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
