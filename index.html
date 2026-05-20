@@ -2,104 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naledi Motor Center | Home</title>
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>Naledi Motor Center</title>
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Simplified Top Bar (Professional) -->
-    <header class="top-bar py-2 text-center border-bottom bg-light">
-        <div class="container small fw-bold text-uppercase">
-            Quality Vintage & Pre-Owned Vehicles in Botswana
-        </div>
-    </header>
-
-    <!-- Professional Navigation Bar (Straight Line) -->
-    <nav class="navbar navbar-expand-lg sticky-top shadow-sm main-nav">
-        <div class="container">
-            <div class="custom-nav-container w-100">
-                <div class="nav-group">
-                    <a class="nav-link active" href="index.html">Home</a>
-                    <a class="nav-link" href="about.html">About us</a>
-                    <a class="nav-link" href="services.html">Services</a>
-                </div>
-
-                <div class="logo-circle">
-                    <img src="logo.png" alt="Naledi Logo">
-                </div>
-
-                <div class="nav-group">
-                    <a class="nav-link" href="shop.html">Shop</a>
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
+<header>
+    <h1>Vintage Car Collection</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
+</header>
 
-    <main>
-        <!-- Hero Section: The First Thing Customers See -->
-        <section class="hero-section text-center d-flex align-items-center justify-content-center text-white" 
-                 style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=2000'); background-size: cover; background-position: center; height: 70vh;">
-            <div class="container">
-                <h1 class="display-2 fw-bold mb-3">Relive the Past</h1>
-                <p class="fs-3 mb-5">Professional vintage car sellers since 2015.</p>
-                <a href="shop.html" class="btn btn-primary btn-lg px-5 py-3 fw-bold rounded-pill">Explore Our Collection</a>
-            </div>
-        </section>
+<section class="hero">
+    <h2>Classic Cars, Timeless Style</h2>
+    <p>Explore our exclusive collection of vintage automobiles.</p>
 
-        <!-- Welcome Section -->
-        <section class="container my-5 py-5 text-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <h2 class="display-5 fw-bold mb-4">Welcome to Naledi Motor Center</h2>
-                    <p class="lead text-secondary mb-4">
-                        We are a dealership that's bringing the amazing past to the present. 
-                        Our goal is to help you find that one car model you want at an affordable price.
-                    </p>
-                    <p class="text-muted">
-                        With over a decade of experience in the Gaborone automotive market, we specialize in 
-                        sourcing, inspecting, and delivering iconic vehicles that stand the test of time.
-                        Come to us and you will never regret your decision.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <a href="catalog.html">Browse Cars</a>
 
-    <!-- Professional Footer with Hours (Apply this to ALL pages) -->
-    <footer class="bg-dark text-white pt-5 pb-3">
-        <div class="container">
-            <div class="row g-4 text-md-start text-center">
-                <div class="col-md-4">
-                    <h5 class="fw-bold mb-3 border-bottom border-secondary pb-2">Naledi Motor Center</h5>
-                    <p class="small text-white-50">Providing high-quality vintage and pre-owned vehicles with trust and integrity since 2015.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="fw-bold mb-3 border-bottom border-secondary pb-2">Working Hours</h5>
-                    <ul class="list-unstyled small text-white-50">
-                        <li class="mb-2"><strong>Week days:</strong> 08:00am – 6:00pm</li>
-                        <li class="mb-2"><strong>Weekends:</strong> 08:30am – 1:00pm</li>
-                        <li class="mb-2"><strong>Holidays:</strong> 08:30am – 1:00pm</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="fw-bold mb-3 border-bottom border-secondary pb-2">Location</h5>
-                    <p class="small mb-1 text-white-50">29057 Motloutse St, Gaborone</p>
-                    <p class="small mb-1 text-white-50">+267 74588888</p>
-                    <p class="small text-white-50">naledimotorcenter15@gmail.com</p>
-                </div>
-            </div>
-            <hr class="mt-4 mb-3 border-secondary">
-            <div class="text-center small text-white-50">
-                &copy; 2026 Naledi Ntema. All Rights Reserved.
-            </div>
-        </div>
-    </footer>
+    
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search cars...">
+        <button onclick="searchCars()">Search</button>
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+<footer>
+    <p>© 2026 Vintage Cars</p>
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
