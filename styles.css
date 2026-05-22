@@ -2,23 +2,30 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-color: #f5f5f5;
+
+    color: white;
 }
 
-
 header {
-    background: black;
+    background: rgba(0, 0, 0, 0.9);
     color: white;
     text-align: center;
     padding: 15px;
 }
 
-.logo {
+.logo img {
     width: 120px;
     display: block;
     margin: auto;
 }
-
 
 nav {
     margin-top: 10px;
@@ -35,15 +42,16 @@ nav a:hover {
     color: gold;
 }
 
-
 h1, h2 {
     text-align: center;
 }
 
-
 .hero {
     text-align: center;
     padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .hero input {
@@ -53,20 +61,37 @@ h1, h2 {
 
 .hero button {
     padding: 10px;
-    background: black;
-    color: white;
+    background: gold;
+    color: black;
     border: none;
 }
 
+.btn {
+    display: inline-block;
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: white;
+}
 
 .catalog {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .car {
     background: white;
+    color: black;
     border-radius: 10px;
     padding: 15px;
     margin: 15px;
@@ -80,14 +105,12 @@ h1, h2 {
     border-radius: 10px;
 }
 
-.car h3 {
-    margin: 10px 0;
-}
-
-
 form {
     max-width: 400px;
-    margin: auto;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 input, textarea {
@@ -97,22 +120,22 @@ input, textarea {
 }
 
 button {
-    background: black;
-    color: white;
+    background: gold;
+    color: black;
     padding: 10px;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: gold;
+    background: white;
 }
-
 
 footer {
     text-align: center;
-    background: black;
+    background: rgba(0, 0, 0, 0.9);
     color: white;
     padding: 10px;
     margin-top: 20px;
 }
+``
