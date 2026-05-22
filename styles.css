@@ -1,22 +1,31 @@
 body {
     font-family: Arial;
-    background: #f4f4f4;
     text-align: center;
 }
 
-.car-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+header {
+    background: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+    display: block;
+    margin: auto;
 }
 
 .car {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 20px;
 }
 
-a {
-    text-decoration: none;
-    color: blue;
+img {
+    width: 200px;
 }
