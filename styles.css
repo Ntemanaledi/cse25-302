@@ -1,28 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-header {
-    background: black;
-    color: white;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.hero {
+    font-family: Arial;
+    background: #f4f4f4;
     text-align: center;
-    padding: 50px;
-    background: lightgray;
 }
 
-button, a {
-    background: darkred;
-    color: white;
-    padding: 10px 20px;
+.car-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.car {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
 }
