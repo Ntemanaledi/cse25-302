@@ -1,10 +1,9 @@
-// ✅ SEARCH FUNCTION
+
 function searchCars() {
     let input = document.getElementById("searchInput").value.toLowerCase();
     window.location.href = "catalog.html?search=" + input;
 }
 
-// ✅ FILTER IN CATALOG
 let params = new URLSearchParams(window.location.search);
 let search = params.get("search");
 
@@ -18,7 +17,6 @@ if (search) {
     });
 }
 
-// ✅ CONTACT FORM
 let form = document.getElementById("contactForm");
 
 if (form) {
