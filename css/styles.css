@@ -157,5 +157,21 @@ footer {
         font-size: 22px;
     }
 }
+.nav-link-custom {
+    color: white;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 18px;
+    border-right: 1px solid white;
+}
+
+.nav-link-custom:last-child {
+    border-right: none;
+}
+
+.nav-link-custom:hover {
+    color: gold;
+}
+
 
 
