@@ -143,4 +143,19 @@ footer {
     padding: 10px;
 }
 
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+}
+
 
