@@ -26,3 +26,20 @@ if (form) {
             "Message sent successfully!";
     });
 }
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function addToCart(car) {
+    cart.push(car);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
+    alert(car + " added to cart!");
+}
+
+function updateCartCount() {
+    let count = document.getElementById("cart-count");
+    if (count) {
+        count.textContent = cart.length;
+    }
+}
+
+updateCartCount();
