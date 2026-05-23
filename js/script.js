@@ -58,9 +58,15 @@ function filterBrand(brand) {
     let cars = document.querySelectorAll(".car");
 
     cars.forEach(car => {
-        if (brand === "all" || car.getAttribute("data-brand") === brand) {
+        let carBrand = car.getAttribute("data-brand");
+
+        if (brand === "all") {
             car.style.display = "";
-        } else {
+        }
+        else if (carBrand === brand) {
+            car.style.display = "";
+        }
+        else {
             car.style.display = "none";
         }
     });
