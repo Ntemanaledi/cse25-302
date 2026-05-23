@@ -43,3 +43,14 @@ function updateCartCount() {
 }
 
 updateCartCount();
+function filterBrand(brand) {
+    let cars = document.querySelectorAll(".car");
+
+    cars.forEach(car => {
+        if (brand === "all" || car.getAttribute("data-brand") === brand) {
+            car.style.display = "";
+        } else {
+            car.style.display = "none";
+        }
+    });
+}
