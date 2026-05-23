@@ -1,9 +1,17 @@
-
 function searchCars() {
     let input = document.getElementById("searchInput").value.toLowerCase();
-    window.location.href = "catalog.html?search=" + input;
-}
+    let cars = document.querySelectorAll(".car");
 
+    cars.forEach(car => {
+        let text = car.textContent.toLowerCase();
+
+        if (text.includes(input)) {
+            car.style.display = ""; 
+        } else {
+            car.style.display = "none"; 
+        }
+    });
+}
 let params = new URLSearchParams(window.location.search);
 let search = params.get("search");
 
@@ -11,12 +19,15 @@ if (search) {
     let cars = document.querySelectorAll(".car");
 
     cars.forEach(car => {
-        if (!car.textContent.toLowerCase().includes(search)) {
+        let text = car.textContent.toLowerCase();
+
+        if (text.includes(search)) {
+            car.style.display = "";
+        } else {
             car.style.display = "none";
         }
     });
 }
-
 let form = document.getElementById("contactForm");
 
 if (form) {
