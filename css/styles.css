@@ -176,6 +176,10 @@ img {
     max-height: 400px;
     object-fit: cover;
 }
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 
 
