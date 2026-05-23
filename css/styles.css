@@ -172,6 +172,10 @@ footer {
 .nav-link-custom:hover {
     color: gold;
 }
+img {
+    max-height: 400px;
+    object-fit: cover;
+}
 
 
 
