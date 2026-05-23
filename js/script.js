@@ -1,42 +1,4 @@
-function searchCars() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let cars = document.querySelectorAll(".car");
 
-    cars.forEach(car => {
-        let text = car.textContent.toLowerCase();
-
-        if (text.includes(input)) {
-            car.style.display = ""; 
-        } else {
-            car.style.display = "none"; 
-        }
-    });
-}
-let params = new URLSearchParams(window.location.search);
-let search = params.get("search");
-
-if (search) {
-    let cars = document.querySelectorAll(".car");
-
-    cars.forEach(car => {
-        let text = car.textContent.toLowerCase();
-
-        if (text.includes(search)) {
-            car.style.display = "";
-        } else {
-            car.style.display = "none";
-        }
-    });
-}
-let form = document.getElementById("contactForm");
-
-if (form) {
-    form.addEventListener("submit", function(e) {
-        e.preventDefault();
-        document.getElementById("message").textContent =
-            "Message sent successfully!";
-    });
-}
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(car) {
@@ -54,20 +16,75 @@ function updateCartCount() {
 }
 
 updateCartCount();
+
 function filterBrand(brand) {
     let cars = document.querySelectorAll(".car");
+
+    brand = brand.trim().toLowerCase();
 
     cars.forEach(car => {
         let carBrand = car.getAttribute("data-brand");
 
-        if (brand === "all") {
-            car.style.display = "";
+        if (carBrand) {
+            carBrand = carBrand.trim().toLowerCase();
         }
-        else if (carBrand === brand) {
+
+        if (brand === "all" || carBrand === brand) {
             car.style.display = "";
-        }
-        else {
+        } else {
             car.style.display = "none";
         }
+    });
+}
+
+function searchCars() {
+    let input = document.getElementById("searchInput");
+
+    if (!input) return;
+
+    let search = input.value.toLowerCase();
+    let cars = document.querySelectorAll(".car");
+
+    cars.forEach(car => {
+        let text = car.textContent.toLowerCase();
+
+        if (text.includes(search)) {
+            car.style.display = "";
+        } else {
+            car.style.display = "none";
+        }
+    });
+}
+
+
+window.onload = function () {
+    let params = new URLSearchParams(window.location.search);
+    let search = params.get("search");
+
+    if (search) {
+        search = search.toLowerCase();
+
+        let cars = document.querySelectorAll(".car");
+
+        cars.forEach(car => {
+            let text = car.textContent.toLowerCase();
+
+            if (text.includes(search)) {
+                car.style.display = "";
+            } else {
+                car.style.display = "none";
+            }
+        });
+    }
+};
+
+
+let form = document.getElementById("contactForm");
+
+if (form) {
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        document.getElementById("message").textContent =
+            "Message sent successfully!";
     });
 }
