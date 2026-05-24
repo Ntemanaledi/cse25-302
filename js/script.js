@@ -1,9 +1,7 @@
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-function addToCart(car) {
-    cart.push(car);
-    localStorage.setItem("cart", JSON.stringify(cart));
+function.stringify(cart));function addToCart(car) {
     updateCartCount();
     alert(car + " added to cart!");
 }
@@ -14,34 +12,18 @@ function updateCartCount() {
         count.textContent = cart.length;
     }
 }
+function searchCars() {
+    let input = document.getElementById("searchInput");
 
-updateCartCount();
+    if (!input) return;
 
-function filterBrand(brand) {
-    let cars = document.querySelectorAll(".car");
+    let search = input.value.toLowerCase();
 
-    brand = brand.trim().toLowerCase();
-
-    cars.forEach(car => {
-        let carBrand = car.getAttribute("data-brand");
-
-        if (carBrand) {
-            carBrand = carBrand.trim().toLowerCase();
-        }
-
-        car.style.border = "none";
-        car.style.opacity = "0.6";
-
-        if (brand === "all") {
-            car.style.opacity = "1";
-        } 
-        else if (carBrand === brand) {
-            car.style.border = "3px solid gold";
-            car.style.opacity = "1";
-        }
-    });
+    window.location.href = "catalog.html?search=" + search;
 }
 
+updateCartCount();
+    cart.push(car);
 function searchCars() {
     let input = document.getElementById("searchInput");
 
@@ -54,13 +36,14 @@ function searchCars() {
         let text = car.textContent.toLowerCase();
 
         if (text.includes(search)) {
-            car.style.opacity = "1";
+            car.style.opacity = "1";     
+            car.style.transform = "scale(1.05)";
         } else {
-            car.style.opacity = "0.2"; 
+            car.style.opacity = "0.3";   
+            car.style.transform = "scale(1)";
         }
     });
 }
-
 let form = document.getElementById("contactForm");
 
 if (form) {
@@ -70,7 +53,25 @@ if (form) {
             "Message sent successfully!";
     });
 }
-
 window.onload = function () {
     updateCartCount();
+
+    let params = new URLSearchParams(window.location.search);
+    let search = params.get("search");
+
+    if (search) {
+        let cars = document.querySelectorAll(".car");
+
+        cars.forEach(car => {
+            let text = car.textContent.toLowerCase();
+
+            if (text.includes(search.toLowerCase())) {
+                car.style.opacity = "1";
+                car.style.transform = "scale(1.05)";
+            } else {
+                car.style.opacity = "0.3";
+                car.style.transform = "scale(1)";
+            }
+        });
+    }
 };
