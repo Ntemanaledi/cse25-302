@@ -29,10 +29,15 @@ function filterBrand(brand) {
             carBrand = carBrand.trim().toLowerCase();
         }
 
-        if (brand === "all" || carBrand === brand) {
-            car.style.display = "";
-        } else {
-            car.style.display = "none";
+        car.style.border = "none";
+        car.style.opacity = "0.6";
+
+        if (brand === "all") {
+            car.style.opacity = "1";
+        } 
+        else if (carBrand === brand) {
+            car.style.border = "3px solid gold";
+            car.style.opacity = "1";
         }
     });
 }
@@ -49,35 +54,12 @@ function searchCars() {
         let text = car.textContent.toLowerCase();
 
         if (text.includes(search)) {
-            car.style.display = "";
+            car.style.opacity = "1";
         } else {
-            car.style.display = "none";
+            car.style.opacity = "0.2"; 
         }
     });
 }
-
-
-window.onload = function () {
-    let params = new URLSearchParams(window.location.search);
-    let search = params.get("search");
-
-    if (search) {
-        search = search.toLowerCase();
-
-        let cars = document.querySelectorAll(".car");
-
-        cars.forEach(car => {
-            let text = car.textContent.toLowerCase();
-
-            if (text.includes(search)) {
-                car.style.display = "";
-            } else {
-                car.style.display = "none";
-            }
-        });
-    }
-};
-
 
 let form = document.getElementById("contactForm");
 
@@ -88,3 +70,7 @@ if (form) {
             "Message sent successfully!";
     });
 }
+
+window.onload = function () {
+    updateCartCount();
+};
