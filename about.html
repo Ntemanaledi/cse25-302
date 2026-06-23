@@ -10,6 +10,10 @@
 
     <title>About Us</title> 
 
+    <!-- Bootstrap CSS --> 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
     <link rel="stylesheet" href="styles.css"> 
 
 </head> 
@@ -18,38 +22,81 @@
 
     <header> 
 
-        <h1>About Us</h1> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
 
-        <nav> 
+        <div class="container"> 
 
-            <a href="index.html">Home</a> | 
+            <a class="navbar-brand" href="about.html">About Us</a> 
 
-            <a href="about.html">About</a> |  
-            
-            <a href="catalog.html">Catalog</a> |
-            
-            <a href="contact.html">Contact</a>
-        </nav> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
 
-    </header> 
+                <span class="navbar-toggler-icon"></span> 
+
+            </button> 
+
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+
+                <ul class="navbar-nav"> 
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="index.html">Home</a> 
+
+                    </li> 
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="about.html">About</a> 
+
+                    </li>
+
+                     <li class="nav-item"> 
+
+                        <a class="nav-link" href="catalog.html">Catalog</a> 
+
+                    </li> 
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="contact.html">Contact</a> 
+
+                    </li> 
+
+                </ul> 
+
+            </div> 
+
+        </div> 
+
+    </nav> 
+
+</header> 
 
  
 
-    <main> 
+   <main class="container my-5"> 
 
-        <p>Hi! I'm a beginner web developer learning how to use GitHub Pages.</p> 
+    <h2>About Us</h2> 
 
-        <p>This is my first multi-page website, and I'm excited to share it with you!</p> 
+        <p>Welcome to Naledi Vintage Cars.We specialize in classic and timeless vehicles.Our passion is bringing vintage cars back to life
+        and connecting them with collectors and enthusiasts.</p> 
 
+        <p>Each car in our collection is carefully selected and restored to maintain it's original beauty and performance.</p> 
+       
     </main> 
 
  
 
     <footer> 
 
-        <p>&copy; 2023 Your Name</p> 
+        <p>&copy; 2026 Naledi Vintage Cars</p> 
 
     </footer> 
+    <!-- Bootstrap JS and dependencies --> 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
 
 </body> 
 
