@@ -4,14 +4,15 @@ body {
 
     color: #333; 
 
-    background-color: #f9f9f9; 
+    background-color: #ffffff; 
 
     margin: 0; 
 
     padding: 0; 
 
     line-height: 1.6; 
-
+    
+    transition: background-color 0.3s, color 0.3s;
 } 
 header { 
 
@@ -130,3 +131,14 @@ main a[href^="mailto:"] {
     font-weight: bold; 
 
 } 
+body.dark-mode { 
+
+    background-color: #333333; 
+
+    color: #f9f9f9; 
+
+} 
+
+body.dark-mode nav { background-color: #222222; } 
+
+#theme-toggle { padding: 8px 16px; cursor: pointer; margin: 10px; } 
