@@ -142,3 +142,23 @@ body.dark-mode {
 body.dark-mode nav { background-color: #222222; } 
 
 #theme-toggle { padding: 8px 16px; cursor: pointer; margin: 10px; } 
+
+#typing-headline { 
+
+    min-height: 80px; 
+
+    border-right: 3px solid #4CAF50; 
+
+    display: inline-block; 
+
+    animation: blink 0.75s step-end infinite; 
+
+} 
+
+@keyframes blink { 
+
+    from, to { border-color: transparent; } 
+
+    50% { border-color: #4CAF50; } 
+
+} 
