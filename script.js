@@ -114,3 +114,47 @@ backToTopButton.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' }); 
 
 }); 
+
+const filterButtons = document.querySelectorAll('.filter-btn'); 
+
+const projects = document.querySelectorAll('.project-card'); 
+
+ 
+
+filterButtons.forEach(button => { 
+
+    button.addEventListener('click', function() { 
+
+        filterButtons.forEach(btn => btn.classList.remove('active')); 
+
+        this.classList.add('active'); 
+
+        const filterValue = this.getAttribute('data-filter'); 
+
+        projects.forEach(project => { 
+
+            if (filterValue === 'all') { 
+
+                project.classList.remove('hidden'); 
+
+            } else { 
+
+                const categories = project.getAttribute('data-category'); 
+
+                if (categories.includes(filterValue)) { 
+
+                    project.classList.remove('hidden'); 
+
+                } else { 
+
+                    project.classList.add('hidden'); 
+
+                } 
+
+            } 
+
+        }); 
+
+    }); 
+
+}); 
