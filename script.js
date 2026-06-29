@@ -158,3 +158,31 @@ filterButtons.forEach(button => {
     }); 
 
 }); 
+
+const revealButton = document.getElementById('reveal-fact'); 
+
+const funFact = document.getElementById('fun-fact'); 
+
+ 
+
+revealButton.addEventListener('click', function() { 
+
+    // Toggle the fact visibility 
+
+    funFact.classList.toggle('show'); 
+
+ 
+
+    // Change button text based on visibility 
+
+    if (funFact.classList.contains('show')) { 
+
+        revealButton.textContent = 'J Hide Fun Fact'; 
+
+    } else { 
+
+        revealButton.textContent = '🔍 Click to Reveal a Fun Fact About Me!'; 
+
+    } 
+
+}); 
