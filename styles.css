@@ -307,5 +307,5 @@ body.dark-mode nav { background-color: #222222; }
   
   color: white;                 /* so text shows over the image */
   text-align: center;
-  padding: 120px 20px;          /* makes header taller so you can see the image */
+  padding: 100px 15px;          /* makes header taller so you can see the image */
 }
