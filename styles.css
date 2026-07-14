@@ -298,3 +298,14 @@ body.dark-mode nav { background-color: #222222; }
 .hidden-fact {
     display: none;
 }
+
+.site-header {
+  background-image: url('background.jpg'); /* path to your image */
+  background-size: cover;       /* makes it fill the whole header */
+  background-position: center;  /* centers the image */
+  background-repeat: no-repeat; /* don't tile it */
+  
+  color: white;                 /* so text shows over the image */
+  text-align: center;
+  padding: 120px 20px;          /* makes header taller so you can see the image */
+}
