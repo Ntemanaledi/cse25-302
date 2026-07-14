@@ -307,7 +307,8 @@ body.dark-mode nav { background-color: #222222; }
   
   color: white;                 /* so text shows over the image */
   text-align: center;
-  padding: 90px 10px;          /* makes header taller so you can see the image */
+  padding: 60px 20px;          /* makes header taller so you can see the image */
+  min-height: 250px;
 }
 
 .hero-tagline {
