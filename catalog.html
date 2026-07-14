@@ -1,113 +1,264 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Collection - Naledi Vintage Cars</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<html lang="en"> 
+    <header class="site-header">
+        <div class="container d-flex justify-content-between align-items-center py-2">
+            <img src="logo.jpg" alt="NALEDI VINTAGE CARS" width="150">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Naledi Vintage Cars</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="catalog.html">Catalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-<head> 
+    <!-- Catalog Hero Section -->
+    <section class="bg-light py-5 text-center border-bottom">
+        <div class="container py-3">
+            <h1 class="display-5 fw-bold">The Vintage Collection</h1>
+            <p class="lead text-muted mx-auto" style="max-width: 700px;">
+                Explore our handpicked selection of timeless automotive masterpieces. Every vehicle in our showroom is meticulously inspected, beautifully restored, and ready for its next journey.
+            </p>
+        </div>
+    </section>
 
-    <meta charset="UTF-8"> 
+    <!-- Catalog Grid -->
+    <main class="container my-5">
+        <div class="row g-4">
+            
+            <!-- Car Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images/mustang.jpg" class="card-img-top" alt="1967 Ford Mustang Fastback" style="height: 220px; object-fit: cover; background-color: #eaeaea;">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">1967</span>
+                        <h5 class="card-title fw-bold">Ford Mustang Fastback</h5>
+                        <p class="card-text text-muted small">An absolute icon of American muscle. Finished in classic deep metallic blue with pristine white racing stripes.</p>
+                        
+                        <div class="border-top pt-3 mt-3">
+                            <div class="row text-center text-muted small">
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-speedometer2"></i>
+                                    <div class="mt-1">45,200 mi</div>
+                                </div>
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-gear"></i>
+                                    <div class="mt-1">Manual</div>
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-droplet"></i>
+                                    <div class="mt-1">V8 Petrol</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+                        <span class="fs-5 fw-bold text-dark">P425,000</span>
+                        <a href="contact.html" class="btn btn-dark btn-sm">Inquire</a>
+                    </div>
+                </div>
+            </div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+            <!-- Car Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images/corvette.jpg" class="card-img-top" alt="1963 Chevrolet Corvette Split-Window" style="height: 220px; object-fit: cover; background-color: #eaeaea;">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">1963</span>
+                        <h5 class="card-title fw-bold">Chevrolet Corvette</h5>
+                        <p class="card-text text-muted small">The legendary 'Split-Window' coupe. Features matching-numbers engine and stunning original crimson interior.</p>
+                        
+                        <div class="border-top pt-3 mt-3">
+                            <div class="row text-center text-muted small">
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-speedometer2"></i>
+                                    <div class="mt-1">32,800 mi</div>
+                                </div>
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-gear"></i>
+                                    <div class="mt-1">Manual</div>
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-droplet"></i>
+                                    <div class="mt-1">327 V8</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+                        <span class="fs-5 fw-bold text-dark">P680,000</span>
+                        <a href="contact.html" class="btn btn-dark btn-sm">Inquire</a>
+                    </div>
+                </div>
+            </div>
 
-    <title>Catalog</title> 
-    <!-- Bootstrap CSS --> 
+            <!-- Car Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images/mercedes.jpg" class="card-img-top" alt="1972 Mercedes-Benz 280SE" style="height: 220px; object-fit: cover; background-color: #eaeaea;">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">1972</span>
+                        <h5 class="card-title fw-bold">Mercedes-Benz 280SE</h5>
+                        <p class="card-text text-muted small">The peak of German classic luxury and engineering. Extremely smooth drive, complete with elegant wood trim.</p>
+                        
+                        <div class="border-top pt-3 mt-3">
+                            <div class="row text-center text-muted small">
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-speedometer2"></i>
+                                    <div class="mt-1">89,100 mi</div>
+                                </div>
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-gear"></i>
+                                    <div class="mt-1">Automatic</div>
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-droplet"></i>
+                                    <div class="mt-1">2.8L I6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+                        <span class="fs-5 fw-bold text-dark">P295,000</span>
+                        <a href="contact.html" class="btn btn-dark btn-sm">Inquire</a>
+                    </div>
+                </div>
+            </div>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Car Card 4 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images/jaguar.jpg" class="card-img-top" alt="1961 Jaguar E-Type Series 1" style="height: 220px; object-fit: cover; background-color: #eaeaea;">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">1961</span>
+                        <h5 class="card-title fw-bold">Jaguar E-Type Roadster</h5>
+                        <p class="card-text text-muted small">Described by Enzo Ferrari as "the most beautiful car ever made." Beautifully restored British racing green exterior.</p>
+                        
+                        <div class="border-top pt-3 mt-3">
+                            <div class="row text-center text-muted small">
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-speedometer2"></i>
+                                    <div class="mt-1">19,500 mi</div>
+                                </div>
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-gear"></i>
+                                    <div class="mt-1">Manual</div>
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-droplet"></i>
+                                    <div class="mt-1">3.8L I6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+                        <span class="fs-5 fw-bold text-dark">P850,000</span>
+                        <a href="contact.html" class="btn btn-dark btn-sm">Inquire</a>
+                    </div>
+                </div>
+            </div>
 
-    <link rel="stylesheet" href="styles.css"> 
+            <!-- Car Card 5 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images/porsche.jpg" class="card-img-top" alt="1956 Porsche 356 Speedster" style="height: 220px; object-fit: cover; background-color: #eaeaea;">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">1956</span>
+                        <h5 class="card-title fw-bold">Porsche 356 Speedster</h5>
+                        <p class="card-text text-muted small">A lightweight, pure-driving German sports car. Gleaming silver bodywork with a striking wine-red leather cockpit.</p>
+                        
+                        <div class="border-top pt-3 mt-3">
+                            <div class="row text-center text-muted small">
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-speedometer2"></i>
+                                    <div class="mt-1">12,400 mi</div>
+                                </div>
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-gear"></i>
+                                    <div class="mt-1">Manual</div>
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-droplet"></i>
+                                    <div class="mt-1">1.6L Flat-4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+                        <span class="fs-5 fw-bold text-dark">P920,000</span>
+                        <a href="contact.html" class="btn btn-dark btn-sm">Inquire</a>
+                    </div>
+                </div>
+            </div>
 
-</head> 
+            <!-- Car Card 6 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="images/charger.jpg" class="card-img-top" alt="1970 Dodge Charger R/T" style="height: 220px; object-fit: cover; background-color: #eaeaea;">
+                    <div class="card-body">
+                        <span class="badge bg-secondary mb-2">1970</span>
+                        <h5 class="card-title fw-bold">Dodge Charger R/T</h5>
+                        <p class="card-text text-muted small">A menacing, high-performance masterpiece. Equipped with a massive roaring engine and hidden headlight grille.</p>
+                        
+                        <div class="border-top pt-3 mt-3">
+                            <div class="row text-center text-muted small">
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-speedometer2"></i>
+                                    <div class="mt-1">54,000 mi</div>
+                                </div>
+                                <div class="col-4 border-end">
+                                    <i class="bi bi-gear"></i>
+                                    <div class="mt-1">Automatic</div>
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-droplet"></i>
+                                    <div class="mt-1">440 Magnum</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+                        <span class="fs-5 fw-bold text-dark">P510,000</span>
+                        <a href="contact.html" class="btn btn-dark btn-sm">Inquire</a>
+                    </div>
+                </div>
+            </div>
 
-<body> 
+        </div>
+    </main>
 
-    <header class="site-header"> 
-
-         <div class="d-flex justify-content-between"> 
-    <img src="logo.jpg" alt="NALEDI VINTAGE CARS" width="150"> 
-     </div>
-        
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-
-        <div class="container"> 
-
-            <a class="navbar-brand" href="catalog.html">Our Cars!</a> 
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-
-                <span class="navbar-toggler-icon"></span> 
-
-            </button> 
-
-            <div class="collapse navbar-collapse" id="navbarNav"> 
-
-                <ul class="navbar-nav"> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="index.html">Home</a> 
-
-                    </li> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="about.html">About</a> 
-
-                    </li> 
-                    
-                     <li class="nav-item"> 
-
-                        <a class="nav-link" href="catalog.html">Catalog</a> 
-
-                    </li> 
-
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="contact.html">Contact</a> 
-
-                    </li> 
-
-                </ul> 
-
-            </div> 
-
-        </div> 
-
-    </nav> 
-
-</header> 
-
-
-  <main> 
-
-    <div id="filter-buttons"> 
-
-        <button class="filter-btn active" data-filter="all">All</button> 
-
-        <button class="filter-btn" data-filter="html">HTML/CSS</button> 
-
-        <button class="filter-btn" data-filter="bootstrap">Bootstrap</button> 
-
-        <button class="filter-btn" data-filter="javascript">JavaScript</button> 
-
-    </div> 
-
-    <article class="project-card" data-category="html">   
-
-        <h2>Project 1: Personal Portfolio</h2> 
-
-        <p>This is the portfolio you built in Tutorial 5!</p> 
-
-    </article> 
-
-    <article class="project-card" data-category="bootstrap">  
-
-        <h2>Project 2: Your Next Project</h2> 
-
-    </article> 
-
-</main>   
-
-  <div class="container text-center my-4">
+    <!-- Theme Toggle Area -->
+    <div class="container text-center my-4">
         <button id="theme-toggle" class="btn btn-outline-secondary btn-sm">Dark Mode</button>
     </div>
 
@@ -131,14 +282,9 @@
         </div>
     </footer>
 
- <!-- Bootstrap JS and dependencies --> 
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
-
-<script src="script.js"></script>
-    
-</body> 
-
-</html> 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
